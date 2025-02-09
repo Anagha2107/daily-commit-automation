@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Git
+      - name: Configure Git (22f3001312@ds.study.iitm.ac.in)  # Step name includes email
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "22f3001312@ds.study.iitm.ac.in"
@@ -25,3 +25,4 @@ jobs:
           git add last-run.txt
           git commit -m "Automated commit: $(date)"
           git push
+
